@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login and Registration Form</title>
+  </head>
+  <body>
+    <!-- Login & Registration Form -->
+    <div class="form-box">
+      <h1>Login / Registration</h1>
+      <div class="button-box">
+        <div id="btn"></div>
+        <button type="button" class="toggle-btn" onclick="moveLogin()">
+          Log In
+        </button>
+        <button type="button" class="toggle-btn" onclick="moveRegister()">
+          Register
+        </button>
+      </div>
+
+      <!-- Login Form -->
+      <form id="login" class="input-group">
+        <input type="text" class="input-field" placeholder="User Id" required />
+        <input
+          type="password"
+          class="input-field"
+          placeholder="Password"
+          required
+        />
+        <div id="check-box-group">
+          <input type="checkbox" class="checkbox" />
+          <span> Remember Password</span>
+        </div>
+        <button type="submit" class="submit-btn">Log In</button>
+      </form>
+
+      <!-- Registration Form -->
+      <form id="register" class="input-group">
+        <input type="text" class="input-field" placeholder="User Id" required />
+        <input type="email" class="input-field" placeholder="Email" required />
+        <input
+          type="password"
+          class="input-field"
+          placeholder="Password"
+          required
+        />
+        <div id="check-box-group">
+          <input type="checkbox" class="checkbox" />
+          <span> I agree to the Terms and Conditions</span>
+        </div>
+        <button type="submit" class="submit-btn">Register</button>
+      </form>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
